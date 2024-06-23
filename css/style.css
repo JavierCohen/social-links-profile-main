@@ -7,13 +7,14 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    flex-direction: column; /* Cambia la dirección del flex a columna */
+    flex-direction: column;
 }
 
 .profile-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 
 .fotoCard {
@@ -32,7 +33,8 @@ body {
     background-color: rgb(35, 35, 35);
     border-radius: 15px;
     padding: 20px;
-    width: 20vw;
+    width: 90vw; /* Hacerlo responsive al usar ancho relativo */
+    max-width: 400px; /* Máximo ancho para escritorio */
 }
 
 h1 {
@@ -60,12 +62,12 @@ li {
     padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrar los elementos dentro del contenedor */
+    align-items: center;
 }
 
 .social-links li {
     margin: 10px 0;
-    width: 100%; /* Hacer que los elementos de la lista ocupen el 100% del ancho del contenedor */
+    width: 100%;
 }
 
 .social-links li a {
@@ -75,13 +77,13 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%; /* Ancho fijo para los botones */
-    height: 6vh; /* Alto fijo para los botones */
-    background-color: #333; /* Fondo gris para los botones */
-    border-radius: 10px; /* Bordes redondeados */
+    width: 90%; 
+    height: 6vh; 
+    background-color: #333; 
+    border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
-    text-align: center; /* Centrar el contenido del enlace */
-    margin: 0 auto; /* Centrar el botón dentro del <li> */
+    text-align: center;
+    margin: 0 auto;
 }
 
 .social-links li a i {
@@ -89,16 +91,40 @@ li {
 }
 
 .social-links li a:hover {
-    background-color: hsl(75, 94%, 57%); /* Color verde para el hover */
+    background-color: hsl(75, 94%, 57%);
     color: #fff;
 }
 
 .attribution {
     font-size: 11px;
     text-align: center;
-    margin-top: 10vh; /* Espacio superior para separarlo del profile-container */
+    margin-top: 20px; 
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries para diferentes tamaños de pantalla */
+@media (max-width: 375px) {
+    .profile-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .social-links li a {
+        font-size: 18px;
+        height: 50px; 
+    }
+}
+
+@media (min-width: 1440px) {
+    .profile-container {
+        width: 30vw; /* Ajusta según el diseño de escritorio */
+    }
+
+    .social-links li a {
+        font-size: 22px;
+        height: 7vh;
+    }
 }
