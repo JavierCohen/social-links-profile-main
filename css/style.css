@@ -1,0 +1,104 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; /* Cambia la dirección del flex a columna */
+}
+
+.profile-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fotoCard {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 15px 0 0 15px;
+}
+
+.description {
+    color: hsl(75, 94%, 57%);
+}
+
+.profile-container {
+    text-align: center;
+    background-color: rgb(35, 35, 35);
+    border-radius: 15px;
+    padding: 20px;
+    width: 20vw;
+}
+
+h1 {
+    font-size: 30px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+p {
+    font-size: 16px;
+}
+
+li {
+    list-style: none;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar los elementos dentro del contenedor */
+}
+
+.social-links li {
+    margin: 10px 0;
+    width: 100%; /* Hacer que los elementos de la lista ocupen el 100% del ancho del contenedor */
+}
+
+.social-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%; /* Ancho fijo para los botones */
+    height: 6vh; /* Alto fijo para los botones */
+    background-color: #333; /* Fondo gris para los botones */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center; /* Centrar el contenido del enlace */
+    margin: 0 auto; /* Centrar el botón dentro del <li> */
+}
+
+.social-links li a i {
+    margin-right: 10px;
+}
+
+.social-links li a:hover {
+    background-color: hsl(75, 94%, 57%); /* Color verde para el hover */
+    color: #fff;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 10vh; /* Espacio superior para separarlo del profile-container */
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
